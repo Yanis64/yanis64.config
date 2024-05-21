@@ -1,5 +1,10 @@
+call plug#begin()
+Plug 'rust-lang/rust.vim'
+call plug#end()
+
 syntax enable                           " Enables syntax highlighing
-colorscheme ydesert
+colorscheme desert
+set mouse=a
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -8,7 +13,7 @@ set fileencoding=utf-8                  " The encoding written to file
 set ruler              			            " Show the cursor position all the time
 set cmdheight=4                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
-set mouse=a                             " Enable your mouse
+"set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
@@ -22,7 +27,7 @@ set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set number                              " Line numbers
 "set cursorline                          " Enable highlighting of the current line
-"set background=dark                     " tell vim what the background color looks like
+set background=dark                     " tell vim what the background color looks like
 "set showtabline=4                       " Always show tabs
 "set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
@@ -36,7 +41,6 @@ set autochdir                           " Your working directory will always be 
 set ignorecase
 "set incsearch
 
-set number
 set relativenumber
 set noerrorbells
 set visualbell
@@ -47,18 +51,15 @@ set title
 " You can't stop me
 "cmap w!! w !sudo tee %
 
-"inoremap " ""<left>
+""inoremap " ""<left>
 "inoremap ' ''<left>
 "inoremap ( ()<left>
-"inoremap [ []<left>
+""inoremap [ []<left>
 "inoremap { {}<left>
 "inoremap {<CR> {<CR>}<ESC>O
 "inoremap {;<CR> {<CR>};<ESC>O
 
-"inoremap <F11> <
-"inoremap <F12> >
+inoremap <F11> <
+inoremap <F12> >
 
-set t_BE= 
-
-inoremap <c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
-nnoremap <c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+set t_BE=
