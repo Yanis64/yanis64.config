@@ -3,7 +3,20 @@ Plug 'rust-lang/rust.vim'
 call plug#end()
 
 syntax enable                           " Enables syntax highlighing
-colorscheme desert
+colorscheme ydesert
+
+" Enable opacity
+hi NonText ctermbg=none guibg=NONE
+hi Normal guibg=NONE ctermbg=NONE
+hi NormalNC guibg=NONE ctermbg=NONE
+hi SignColumn ctermbg=NONE ctermfg=NONE guibg=NONE
+  " Used for some floating windows
+hi Pmenu ctermbg=NONE ctermfg=NONE guibg=NONE
+hi FloatBorder ctermbg=NONE ctermfg=NONE guibg=NONE
+hi NormalFloat ctermbg=NONE ctermfg=NONE guibg=NONE
+hi TabLine ctermbg=None ctermfg=None guibg=None
+" End opacity
+
 set mouse=a
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
