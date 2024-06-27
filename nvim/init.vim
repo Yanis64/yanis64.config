@@ -64,15 +64,7 @@ set title
 " You can't stop me
 "cmap w!! w !sudo tee %
 
-""inoremap " ""<left>
-"inoremap ' ''<left>
-"inoremap ( ()<left>
-""inoremap [ []<left>
-"inoremap { {}<left>
-"inoremap {<CR> {<CR>}<ESC>O
-"inoremap {;<CR> {<CR>};<ESC>O
-
-inoremap <F11> <
-inoremap <F12> >
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
 
 set t_BE=
