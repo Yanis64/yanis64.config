@@ -1,5 +1,8 @@
 call plug#begin()
 Plug 'rust-lang/rust.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ntpeters/vim-better-whitespace'
 call plug#end()
 
 syntax enable                           " Enables syntax highlighing
@@ -64,7 +67,15 @@ set title
 " You can't stop me
 "cmap w!! w !sudo tee %
 
-nnoremap("<C-d>", "<C-d>zz")
-nnoremap("<C-u>", "<C-u>zz")
+""inoremap " ""<left>
+"inoremap ' ''<left>
+"inoremap ( ()<left>
+""inoremap [ []<left>
+"inoremap { {}<left>
+"inoremap {<CR> {<CR>}<ESC>O
+"inoremap {;<CR> {<CR>};<ESC>O
+
+inoremap <F11> <
+inoremap <F12> >
 
 set t_BE=
