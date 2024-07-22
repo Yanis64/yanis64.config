@@ -50,7 +50,7 @@ opt.updatetime = 300 --    Faster completion
 opt.timeoutlen = 500 --    By default timeoutlen is 1000 ms
 --opt.formatoptions-=cro               --    Stop newline continution of comments
 --opt.clipboard=unnamedplus            --    Copy paste between vim and everything else
-opt.autochdir = true --        Your working directory will always be the same as your working directory
+--opt.autochdir = true --        Your working directory will always be the same as your working directory
 --opt.hlsearch
 opt.ignorecase = true
 --opt.incsearch
