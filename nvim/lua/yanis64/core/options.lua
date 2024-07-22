@@ -40,7 +40,7 @@ opt.smartindent = true --         Makes indenting smart
 opt.autoindent = true --        Good auto indent
 opt.laststatus = 0 --    Always display the status line
 opt.number = true --         Line numbers
-opt.cursorline = true                       --  Enable highlighting of the current line 
+opt.cursorline = true --  Enable highlighting of the current line
 opt.background = "dark" -- tell vim what the background color looks like
 --opt.showtabline=4                    --  Always show tabs
 --opt.noshowmode                       --  We don't need to see things like -- INSERT -- anymore
@@ -61,3 +61,6 @@ opt.visualbell = true
 opt.title = true
 
 opt.signcolumn = "yes"
+
+vim.api.nvim_set_keymap("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true })
