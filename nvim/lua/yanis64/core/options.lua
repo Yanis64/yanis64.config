@@ -3,15 +3,15 @@ vim.cmd("colorscheme ydesert")
 vim.cmd("syntax enable")
 
 vim.cmd([[
-hi NonText ctermbg=none guibg=NONE
-hi Normal guibg=NONE ctermbg=NONE
-hi NormalNC guibg=NONE ctermbg=NONE
-hi SignColumn ctermbg=NONE ctermfg=NONE guibg=NONE
-hi Pmenu ctermbg=NONE ctermfg=NONE guibg=NONE
-hi FloatBorder ctermbg=NONE ctermfg=NONE guibg=NONE
-hi NormalFloat ctermbg=NONE ctermfg=NONE guibg=NONE
-hi TabLine ctermbg=None ctermfg=None guibg=None
-]])
+hi NonText ctermbg=NONE guibg=NONE
+hi Normal  ctermbg=NONE  guibg=NONE
+"hi NormalNC guibg=NONE ctermbg=NONE
+" hi SignColumn ctermbg=NONE ctermfg=NONE guibg=NONE
+" hi Pmenu ctermbg=NONE ctermfg=NONE guibg=NONE
+"  hi FloatBorder ctermbg=NONE ctermfg=NONE guibg=NONE
+"  hi NormalFloat ctermbg=NONE ctermfg=NONE guibg=NONE
+" hi TabLine ctermbg=None ctermfg=None guibg=None
+ ]])
 
 local opt = vim.opt
 
