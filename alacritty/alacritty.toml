@@ -1,0 +1,12 @@
+[window]
+opacity = 0.87
+blur = true
+
+[env]
+XTERM = "xterm-256color"
+
+[shell]
+program = "/bin/zsh"
+
+[font]
+size = 10

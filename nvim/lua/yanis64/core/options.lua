@@ -6,11 +6,11 @@ vim.cmd([[
 hi NonText ctermbg=NONE guibg=NONE
 hi Normal  ctermbg=NONE  guibg=NONE
 "hi NormalNC guibg=NONE ctermbg=NONE
-" hi SignColumn ctermbg=NONE ctermfg=NONE guibg=NONE
-" hi Pmenu ctermbg=NONE ctermfg=NONE guibg=NONE
-"  hi FloatBorder ctermbg=NONE ctermfg=NONE guibg=NONE
-"  hi NormalFloat ctermbg=NONE ctermfg=NONE guibg=NONE
-" hi TabLine ctermbg=None ctermfg=None guibg=None
+"hi SignColumn ctermbg=NONE ctermfg=NONE guibg=NONE
+"hi Pmenu ctermbg=NONE ctermfg=NONE guibg=NONE
+"hi FloatBorder ctermbg=NONE ctermfg=NONE guibg=NONE
+"hi NormalFloat ctermbg=NONE ctermfg=NONE guibg=NONE
+"hi TabLine ctermbg=None ctermfg=None guibg=None
  ]])
 
 local opt = vim.opt
@@ -61,6 +61,3 @@ opt.visualbell = true
 opt.title = true
 
 opt.signcolumn = "yes"
-
-vim.api.nvim_set_keymap("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true })

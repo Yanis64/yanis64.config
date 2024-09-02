@@ -30,16 +30,16 @@ return {
         vim.keymap.set("n", "<Esc>", preview.unwatch, opts("Close Preview/Unwatch"))
 
         -- Option A: Smart tab behavior: Only preview files, expand/collapse directories (recommended)
-        vim.keymap.set("n", "<Tab>", function()
-          local ok, node = pcall(api.tree.get_node_under_cursor)
-          if ok and node then
-            if node.type == "directory" then
-              api.node.open.edit()
-            else
-              preview.node(node, { toggle_focus = true })
-            end
-          end
-        end, opts("Preview"))
+        --	vim.keymap.set("n", "<S-Tab>", function()
+        --		local ok, node = pcall(api.tree.get_node_under_cursor)
+        --		if ok and node then
+        --			if node.type == "directory" then
+        --				api.node.open.edit()
+        --			else
+        --				preview.node(node, { toggle_focus = true })
+        --			end
+        --		end
+        --	end, opts("Preview"))
 
         -- Option B: Simple tab behavior: Always preview
         -- vim.keymap.set('n', '<Tab>', preview.node_under_cursor, opts 'Preview')
